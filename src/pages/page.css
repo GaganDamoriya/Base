@@ -1,0 +1,29 @@
+.RootLayout {
+  display: flex;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+.display-div {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.render-outlet {
+  height: 100vh;
+  width: 100%;
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scroll for the section */
+  display: flex;
+  flex-grow: 1;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+@media screen and (min-width: 760px) {
+  .topbar {
+    display: none;
+  }
+  .leftbarroot {
+    display: block;
+  }
+}

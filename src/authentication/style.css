@@ -1,0 +1,127 @@
+.SignIn-page {
+  height: 100vh;
+  display: flex;
+  background-color: whitesmoke;
+  font-family: "kanit";
+}
+.heading {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+
+.signIn-div {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formdiv {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.signin_btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.signin_btns div {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  border: 1.2px solid white;
+  background-color: white;
+  color: grey;
+  font-weight: 300;
+  padding: 8px 4px 8px 4px;
+  gap: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+    opacity: 0.9;
+  }
+  &:active {
+    transform: scale(1.05);
+  }
+}
+.signIn-div div img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+form input {
+  width: 80%;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: rgb(237, 236, 236);
+  border-radius: 5px;
+  border: none;
+}
+label {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.register-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: gray;
+}
+.forgot {
+  color: blue;
+  width: 81%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+}
+.register-btn span {
+  color: blue;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .SignIn-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .signIn-div {
+    width: 100%;
+  }
+  .signIn-div div {
+    font-size: 0.8rem;
+  }
+  .formdiv {
+    width: 80%;
+  }
+}
